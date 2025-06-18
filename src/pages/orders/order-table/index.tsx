@@ -32,7 +32,7 @@ export function OrderTable() {
       <Table>
         <TableCaption>
           {isLoading ?
-            <div className="flex justify-center w-full"
+            <div className="flex justify-center w-full h-8"
             >
               <LoaderCircle size={16} className="animate-spin" />
             </div>
