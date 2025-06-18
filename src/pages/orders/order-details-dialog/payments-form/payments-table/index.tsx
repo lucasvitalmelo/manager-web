@@ -19,7 +19,7 @@ export function PaymentsTable({ payments, orderId }: { payments: Payment[], orde
   return (
     <Table className="mt-2">
       <TableCaption>
-        A list of your recent orders.
+        A list of your recent payments.
       </TableCaption>
       <TableHeader>
         <TableRow>
