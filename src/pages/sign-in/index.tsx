@@ -20,9 +20,9 @@ export function SignIn() {
       >
         <CardHeader className="flex flex-col items-center w-full mx-auto">
           <CardTitle>
-            <div className="flex flex-col items-center gap-8">
+            <div className="flex flex-col items-center gap-8 text-2xl">
               <Logo size={100} />
-              Thayna Manager
+              Manager
             </div>
           </CardTitle>
           <CardDescription>
