@@ -8,8 +8,7 @@ export function useAuth() {
   const query = useQuery({
     queryKey: ["auth-user"],
     queryFn: async () => {
-      const { data } = await Api.get("/auth/profile");
-      return data;
+      await Api.get("/auth/profile");
     },
     retry: false
   });

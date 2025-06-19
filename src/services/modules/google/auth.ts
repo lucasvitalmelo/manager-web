@@ -1,5 +1,6 @@
 import { env } from "@/settings/env";
 
-export function googleLogin() {
-  window.location.href = `${env.SERVER_API}auth/google`;
+export async function googleLogin() {
+  window.open(`${env.SERVER_API}auth/google`, 'google-login', 'width=500,height=600');
 }
+
