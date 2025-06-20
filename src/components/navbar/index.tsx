@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 import { useTheme } from "@/context/theme-context";
 import { LogOut, Moon, Settings, Sun } from "lucide-react";
 import { Logo } from "../logo";
-import { useLogOut } from "@/hooks/useLogOut";
+import { useLogOut } from "@/hooks/use-logout";
 
 export function Navbar() {
   const { setTheme, theme } = useTheme()
