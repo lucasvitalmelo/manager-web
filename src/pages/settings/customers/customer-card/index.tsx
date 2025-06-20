@@ -12,15 +12,17 @@ import { Edit } from "lucide-react"
 import { TypographyMuted } from "@/utils/typography/typography"
 
 import { DeleteCustomerDialog } from "./delete-customer-dialog"
+import { useFormattedDateAndAge } from "@/hooks/use-formatted-date-and-age"
 
 export function CustomerCard({ id, name, email, age, phone }: Customer) {
+  const { display } = useFormattedDateAndAge(age)
   return (
     <Card className="w-[400px] flex gap-3 py-5">
       <CardHeader>
         <CardTitle className="flex items-center justify-between border-b pb-2">
           <div>
             {name}
-            <TypographyMuted text={new Date(age).toISOString()} />
+            <TypographyMuted text={display} />
           </div>
           <div className="flex gap-1">
             <DeleteCustomerDialog id={id} name={name} />
